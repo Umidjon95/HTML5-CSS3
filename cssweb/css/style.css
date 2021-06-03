@@ -1,0 +1,165 @@
+body, h1, h2, h3, p, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    background-color: #666;
+    border-bottom: 5px solid coral;
+}
+
+#header h1 {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 0;
+    display: inline-block;
+}
+#header .logo {
+    color: coral;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+
+.navbar {
+    float: right;
+}
+.navbar li {
+    display: inline;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px 15px;
+    display: inline-block;
+}
+.navbar li a:hover {
+    color: coral;
+}
+
+
+#banner {
+    min-height: 60vh;
+    background-image: url(../images/wall.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#banner h1 {
+    font-size: 56px;
+    margin-bottom: 25px;
+    padding-top: 150px;
+    color: darkblue;
+}
+#banner p {
+    padding-top: 25px;
+    color: dark;
+    font-size: 18px;
+    font-style: italic;
+    
+}
+
+
+#newsletter {
+    background-color: #565656;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+#newsletter .left {
+    float: left;
+}
+#newsletter .right {
+    float: right;
+}
+#newsletter input {
+    padding: 5px;
+}
+.button {
+    padding: 5px 12px;
+    background-color: coral;
+    color: white;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: white;
+    color: coral;
+    border-radius: 10px;
+}
+
+
+#courses {
+    padding: 30px 0;
+}
+.box {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box img {
+    max-width: 100%;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.clr {
+    clear: both;
+}
+
+#footer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: coral;
+    margin-top: 40px;
+}
+
+
+.main-content {
+    width: 63%;
+    float: left;
+}
+.sidebar {
+    width: 33%;
+    float: right;
+}
+
+#about-us {
+    margin: 40px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg-dark {
+    background-color: #666;
+    color: white;
+    padding: 15px;
+}
+
+.service-box {
+    padding: 30px;
+    margin: 15px 0;
+    background-color: #e5e5e5;
+    border: 1px solid #555;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px 0;
+}
+.form-input, textarea {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.active {
+    color: coral !important;
+}
