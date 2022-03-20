@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT JAPAN</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="header_inner">
+            <h1>
+                <img src="images/logo.png" alt="ABOUT JAPAN">
+            </h1>
+            <ul class="gnav">
+                <li><a href="#top">Top</a></li>
+                <li><a href="#population">Population</a></li>
+                <li><a href="#landarea">Land Area</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <section id="top" class="section_content main_image">
+            <div class="slider">
+                <img src="images/main.png" class="animation" alt="Main img">
+                <img src="images/main_02.png" class="animation" alt="Main img">
+                <img src="images/main_03.png" class="animation" alt="Main img">
+            </div>
+        </section>
+
+        <section id="population" class="section_content population">
+            <div class="section_inner">
+                <h2>Population</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod dolore sit dolor sapiente repellat placeat nesciunt quas pariatur doloribus quibusdam deserunt ipsum vero, quia iusto atque at perspiciatis eveniet quasi optio! Eius praesentium excepturi perspiciatis assumenda, a nisi repellat. Corrupti, est libero voluptatibus facilis laudantium suscipit accusantium amet harum, recusandae fuga exercitationem fugit aliquid nobis, consequuntur quo vero quae sapiente ipsa eos tempora quibusdam. Unde incidunt a ex nihil, placeat voluptatum ipsum quaerat, facilis aspernatur minima eius distinctio ad.</p>
+                <div class="population_box">
+                    <img class="animation" src="images/population.png" alt="Population">
+                    <p>125.930.000<span><br>people<br>(2020.8)</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="landarea" class="section_content landarea">
+            <div class="section_inner">
+                <h2>Land area</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod dolore sit dolor sapiente repellat placeat nesciunt quas pariatur doloribus quibusdam deserunt ipsum vero, quia iusto atque at perspiciatis eveniet quasi optio! Eius praesentium excepturi perspiciatis assumenda, a nisi repellat. Corrupti, est libero voluptatibus facilis laudantium suscipit accusantium amet harum, recusandae fuga exercitationem fugit aliquid nobis, consequuntur quo vero quae sapiente ipsa eos tempora quibusdam. Unde incidunt a ex nihil, placeat voluptatum ipsum quaerat, facilis aspernatur minima eius distinctio ad.</p>
+                <div class="population_box">
+                    <img class="animation" src="images/landarea.png" alt="LandArea">
+                    <p>145.936<span><br>square kilometres<br>(56.346.20 square miles)</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="industries" class="section_content industries">
+            <div class="section_inner_02">
+                <h2>Industries</h2>
+                <div class="industries_box">
+                    <img  class="animation" src="images/industories.png" alt="Industries">
+                    <div class="industries_text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod dolore sit dolor sapiente repellat placeat nesciunt quas pariatur doloribus quibusdam deserunt ipsum vero, quia iusto atque at perspiciatis eveniet quasi optio! Eius praesentium excepturi perspiciatis assumenda, a nisi repellat. Corrupti, est libero voluptatibus facilis laudantium suscipit accusantium amet harum, recusandae fuga exercitationem fugit aliquid nobis, consequuntur quo vero quae sapiente ipsa eos tempora quibusdam. Unde incidunt a ex nihil, placeat voluptatum ipsum quaerat, facilis aspernatur minima eius distinctio ad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="section_content history">
+            <div class="section_inner_02">
+                <h2>History</h2>
+                <div class="history_box">
+                    <div class="history_text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quod dolore sit dolor sapiente repellat placeat nesciunt quas pariatur doloribus quibusdam deserunt ipsum vero, quia iusto atque at perspiciatis eveniet quasi optio! Eius praesentium excepturi perspiciatis assumenda, a nisi repellat. Corrupti, est libero voluptatibus facilis laudantium suscipit accusantium amet harum, recusandae fuga exercitationem fugit aliquid nobis, consequuntur quo vero quae sapiente ipsa eos tempora quibusdam. Unde incidunt a ex nihil, placeat voluptatum ipsum quaerat, facilis aspernatur minima eius distinctio ad.</p>
+                    </div>
+                    <img  class="animation" src="images/history.png" alt="History">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer_inner">
+            <img  class="animation" src="images/footer_logo.png" alt="footer">  
+            <p class="copyright">&copy; 2022 ABOUT JAPAN</p>
+        </div>
+    </footer>
+    
+    <script type="text/javascript">
+        $(function(){
+            $(window).on('load scroll',function (){
+                $('.animation').each(function(){
+                    var target = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var height = $(window).height();
+                    if (scroll > target - height){
+                        $(this).addClass('active');
+                    }
+                });
+            });
+        });
+
+        $(function(){
+            $('a[href^="#"]').click(function(){
+                var speed = 500;
+                var href = $(this).attr("href");
+                var target =  $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html,body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            })
+        })
+
+        // sliderni harakatlantirish
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 2,
+            dots: true,
+            autoplay: true,
+            speed: 300,
+        });
+    </script>
+
+</body>
+</html>
